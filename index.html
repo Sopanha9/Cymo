@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinSpire - Image Discovery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Cymo</div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search images...">
+                <button id="searchBtn">Search</button>
+            </div>
+            <button id="scanBtn" class="scan-btn">Scan Image</button>
+        </nav>
+    </header>
+
+    <main>
+        <div class="image-grid" id="imageGrid"></div>
+    </main>
+
+    <!-- Image Capture Modal -->
+    <div id="captureModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Capture Image</h2>
+            <video id="video" autoplay></video>
+            <canvas id="canvas" style="display: none;"></canvas>
+            <button id="captureBtn">Take Photo</button>
+            <div id="capturedImage"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
